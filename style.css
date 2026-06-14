@@ -1,7 +1,5 @@
 /* ============================================================
    HANNA & BERCI — VADVIRÁGOS ESKÜVŐI OLDAL
-   Paletta: mélyméz arany · vad rózsa · búzavirágkék · levendula · réti zöld
-   Betűk: Cormorant Garamond (cím) · EB Garamond (szövegtörzs)
    ============================================================ */
 
 /* --- VÁLTOZÓK --- */
@@ -15,14 +13,6 @@
     --lavender: #7C5C9E;
     --ink:      #2A2318;
     --ink-soft: #5C5043;
-
-    /* Szekció-hátterek — ezeket a divider gradiensei tükrözik */
-    --bg-cream:    #FDF6E8;
-    --bg-peach:    #FAEEE5;
-    --bg-lavender: #F0EEF8;
-    --bg-blue:     #EAF0F8;
-    --bg-yellow:   #FFFBEE;
-    --bg-mint:     #F8FBF2;
 }
 
 /* --- ALAP RESET --- */
@@ -38,14 +28,12 @@ body {
     overflow-x: hidden;
 }
 
-/* ============================================================
-   NAVIGÁCIÓ
-   ============================================================ */
+/* --- NAVIGÁCIÓ --- */
 .site-nav {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
-    background: rgba(253, 246, 232, 0.94);
+    background: rgba(253, 246, 232, 0.92);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(200, 134, 10, 0.18);
     transition: box-shadow 0.3s;
@@ -78,9 +66,7 @@ body {
     list-style: none;
     display: flex;
     gap: 28px;
-    flex-wrap: nowrap;
 }
-
 .nav-links a {
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 0.88rem;
@@ -112,7 +98,6 @@ body {
     border: none;
     cursor: pointer;
     padding: 4px;
-    flex-shrink: 0;
 }
 .nav-burger span {
     display: block;
@@ -126,7 +111,7 @@ body {
     flex-direction: column;
     padding: 16px 30px 20px;
     border-top: 1px solid rgba(200,134,10,0.12);
-    background: rgba(253,246,232,0.98);
+    background: rgba(253,246,232,0.97);
 }
 .nav-mobile a {
     font-family: 'EB Garamond', Georgia, serif;
@@ -153,11 +138,10 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 80px 20px 50px;
+    padding: 80px 20px 60px;
     gap: 20px;
-
     background:
-        linear-gradient(to bottom, rgba(253,246,232,0.72) 0%, rgba(253,246,232,0.50) 50%, rgba(253,246,232,0.72) 100%),
+        linear-gradient(to bottom, rgba(253,246,232,0.72) 0%, rgba(253,246,232,0.55) 50%, rgba(253,246,232,0.72) 100%),
         url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600') center/cover no-repeat;
     background-attachment: fixed;
 }
@@ -165,7 +149,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(253,246,232,0.15);
+    background: rgba(253,246,232,0.18);
     pointer-events: none;
 }
 
@@ -174,7 +158,7 @@ body {
     z-index: 2;
     text-align: center;
     flex: 0 0 auto;
-    padding: 24px 40px 12px;
+    padding: 28px 40px 16px;
 }
 
 .hero-eyebrow {
@@ -183,7 +167,7 @@ body {
     letter-spacing: 6px;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .hero-title {
@@ -198,7 +182,7 @@ body {
 .hero-title .amp { color: var(--rose); font-style: normal; font-weight: 400; }
 
 .countdown {
-    margin-top: 18px;
+    margin-top: 24px;
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 1rem;
     letter-spacing: 3px;
@@ -206,7 +190,6 @@ body {
     color: var(--ink-soft);
 }
 
-/* Save the date */
 .hero-savethedate {
     position: relative;
     z-index: 2;
@@ -259,88 +242,11 @@ body {
 }
 
 /* ============================================================
-   VIRÁGOS ELVÁLASZTÓK
-   A PNG-n a fehér területek eltűnnek a multiply miatt.
-   Minden dividernek saját gradiens háttere van, ami pontosan
-   illeszkedik a fölötte és alatta lévő szekció hátteréhez.
-   ============================================================ */
-.flower-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-    /* negatív margin: a virág "beleér" a szomszédos szekciókba */
-    margin: -45px 0;
-    padding: 0;
-    pointer-events: none;
-    overflow: visible;
-}
-
-.flower-divider-img {
-    width: min(480px, 86vw);
-    height: auto;
-    display: block;
-    /* mix-blend-mode: multiply eltünteti a fehér hátteret,
-       de csak akkor ha a .flower-row háttere megfelelő szín */
-    mix-blend-mode: multiply;
-    position: relative;
-    z-index: 3;
-}
-
-/* Tükrözés — váltakozó irány */
-.flower-divider-flip { transform: scaleX(-1); }
-
-/* --- Gradiens hátterei a divider dobozoknak ---
-   Felső szín = megelőző szekció aljának háttérszíne
-   Alsó szín  = következő szekció tetejének háttérszíne      */
-
-/* hero (cream) → meghívó teteje (cream) */
-.fd-cream-cream {
-    background: linear-gradient(to bottom, var(--bg-cream) 0%, var(--bg-cream) 100%);
-}
-
-/* meghívó alja (peach) → rsvp teteje (peach→lavender) */
-.fd-peach-lavender {
-    background: linear-gradient(to bottom, var(--bg-peach) 0%, var(--bg-lavender) 100%);
-}
-
-/* rsvp alja (lavender) → rólunk teteje (blue) */
-.fd-lavender-blue {
-    background: linear-gradient(to bottom, var(--bg-lavender) 0%, var(--bg-blue) 100%);
-}
-
-/* rólunk alja (cream) → helyszín teteje (yellow) */
-.fd-cream-yellow {
-    background: linear-gradient(to bottom, var(--bg-cream) 0%, var(--bg-yellow) 100%);
-}
-
-/* helyszín alja (yellow) → program teteje (mint) */
-.fd-yellow-mint {
-    background: linear-gradient(to bottom, var(--bg-yellow) 0%, var(--bg-mint) 100%);
-}
-
-/* program alja (mint) → email teteje (blue) */
-.fd-mint-blue {
-    background: linear-gradient(to bottom, var(--bg-mint) 0%, var(--bg-blue) 100%);
-}
-
-/* ============================================================
    SZEKCIÓK
    ============================================================ */
-.section {
-    padding: 100px 20px;
-}
+.section { padding: 100px 20px; }
 .container { max-width: 740px; margin: 0 auto; }
 .center { text-align: center; }
-
-/* Szekció hátterek — pontosan illeszkednek a divider-változókhoz */
-.section-meghivo  { background: linear-gradient(to bottom, var(--bg-cream) 0%, var(--bg-peach) 100%); }
-.section-rsvp     { background: linear-gradient(to bottom, var(--bg-peach) 0%, var(--bg-lavender) 100%); }
-.section-rolunk   { background: linear-gradient(to bottom, var(--bg-blue) 0%, var(--bg-cream) 100%); }
-.section-helyszin { background: var(--bg-yellow); }
-.section-program  { background: var(--bg-mint); }
-.section-email    { background: linear-gradient(to bottom, var(--bg-blue) 0%, var(--bg-cream) 100%); }
 
 .section-eyebrow {
     font-family: 'EB Garamond', Georgia, serif;
@@ -383,6 +289,14 @@ body {
     margin-top: 44px;
     line-height: 1;
 }
+
+/* Szekció hátterek */
+.section-meghivo  { background: linear-gradient(to bottom, #FDF6E8 0%, #FAEEE5 100%); }
+.section-rsvp     { background: linear-gradient(to bottom, #FAEEE5 0%, #F0EEF8 100%); }
+.section-rolunk   { background: linear-gradient(to bottom, #EAF0F8 0%, #FDF6E8 100%); }
+.section-helyszin { background: #FFFBEE; }
+.section-program  { background: #F8FBF2; }
+.section-email    { background: linear-gradient(to bottom, #EAF0F8 0%, #FDF6E8 100%); }
 
 /* ============================================================
    GOMBOK
@@ -477,6 +391,50 @@ body {
 }
 
 /* ============================================================
+   VIRÁGOS ELVÁLASZTÓK
+   
+   A PNG fehér területe eltűnik mix-blend-mode: multiply miatt,
+   DE csak akkor, ha a .flower-row háttere nem fehér/átlátszó.
+   Ezért minden dividernek pontosan azt a gradienst adjuk,
+   ami a fölötte és alatta lévő szekció határát tükrözi.
+   ============================================================ */
+
+.flower-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: -45px 0;   /* virág "beleér" a szomszédos szekciókba */
+    padding: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.flower-divider-img {
+    width: min(480px, 86vw);
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply;   /* fehér eltűnik, virágszínek maradnak */
+    position: relative;
+    z-index: 3;
+}
+
+/* Tükrözött változat — váltakozó irányhoz */
+.flower-divider-flip { transform: scaleX(-1); }
+
+/* --- Gradiens háttér minden dividernek ---
+   Felső szín = megelőző szekció aljának háttérszíne
+   Alsó szín  = következő szekció tetejének háttérszíne    */
+
+.fd-cream-cream    { background: linear-gradient(to bottom, #FDF6E8, #FDF6E8); }
+.fd-peach-lavender { background: linear-gradient(to bottom, #FAEEE5, #F0EEF8); }
+.fd-lavender-blue  { background: linear-gradient(to bottom, #F0EEF8, #EAF0F8); }
+.fd-cream-yellow   { background: linear-gradient(to bottom, #FDF6E8, #FFFBEE); }
+.fd-yellow-mint    { background: linear-gradient(to bottom, #FFFBEE, #F8FBF2); }
+.fd-mint-blue      { background: linear-gradient(to bottom, #F8FBF2, #EAF0F8); }
+
+/* ============================================================
    LÁBLÉC
    ============================================================ */
 footer {
@@ -486,11 +444,11 @@ footer {
     color: var(--cream);
 }
 .footer-flower {
-    margin-bottom: 12px;
     display: flex;
     justify-content: center;
+    margin-bottom: 12px;
 }
-/* Lábléc virág: sötét háttéren screen blend, hogy a virágszínek áttörjenek */
+/* Sötét háttéren screen blend: virágszínek áttörnek */
 .flower-divider-footer-img {
     width: min(300px, 65vw);
     height: auto;
@@ -533,7 +491,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .hero-top { padding: 36px 20px 20px; }
+    .hero-top { padding: 40px 20px 28px; }
     .hero-title { font-size: clamp(3.2rem, 12vw, 5rem); }
     .std-img-placeholder { height: min(300px, 60vw); }
     .gallery-grid { grid-template-columns: 1fr; }
@@ -541,8 +499,8 @@ footer {
     .section { padding: 70px 16px; }
     .email-row { flex-direction: column; align-items: center; }
     .email-input { width: 100%; max-width: 320px; }
-    .flower-divider-img { width: min(360px, 92vw); }
-    .flower-row { margin: -30px 0; }
+    .flower-divider-img { width: min(340px, 92vw); }
+    .flower-row { margin: -28px 0; }
 }
 
 /* Mozgást csökkentő mód */
