@@ -600,3 +600,25 @@ flex: 1;
 height: auto;
 display: block;
 }
+
+/* --- SZEKCIÓK KÖZTI FINOM ÁTMENET --- */
+
+section {
+    position: relative;
+    overflow: visible;
+}
+
+/* minden szekció alján egy elmosódó átmenet */
+section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px; /* mennyire lógjon át a következő szekcióba */
+    height: 120px; /* az átmenet magassága */
+    pointer-events: none;
+    background: inherit; /* a szekció saját színéből indul */
+    filter: blur(30px); /* EZ adja a “bluros” olvadást */
+    opacity: 0.8;
+    z-index: -1;
+}
