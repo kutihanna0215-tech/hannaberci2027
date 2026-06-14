@@ -1,9 +1,9 @@
 /* ============================================================
-  HANNA & BERCI — VADVIRÁGOS ESKÜVŐI OLDAL
-  Paletta: mélyméz arany, vad rózsa, búzavirágkék, levendula,
-           réti zöld · Alap: meleg krém
-  Betűk: Cormorant Garamond (cím) · EB Garamond (szövegtörzs)
-  ============================================================ */
+   HANNA & BERCI — VADVIRÁGOS ESKÜVŐI OLDAL
+   Paletta: mélyméz arany, vad rózsa, búzavirágkék, levendula,
+            réti zöld · Alap: meleg krém
+   Betűk: Cormorant Garamond (cím) · EB Garamond (szövegtörzs)
+   ============================================================ */
 
 /* --- VÁLTOZÓK --- */
 :root {
@@ -19,15 +19,9 @@
 }
 
 /* --- ALAP RESET --- */
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'EB Garamond', Georgia, serif;
@@ -49,9 +43,7 @@ body {
     transition: box-shadow 0.3s;
 }
 
-.site-nav.scrolled {
-    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-}
+.site-nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 
 .nav-inner {
     max-width: 1100px;
@@ -72,10 +64,7 @@ body {
     letter-spacing: 2px;
     transition: color 0.2s;
 }
-
-.nav-logo:hover {
-    color: var(--rose);
-}
+.nav-logo:hover { color: var(--rose); }
 
 .nav-links {
     list-style: none;
@@ -103,14 +92,8 @@ body {
     background: var(--rose);
     transition: width 0.3s ease;
 }
-
-.nav-links a:hover {
-    color: var(--rose);
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
+.nav-links a:hover { color: var(--rose); }
+.nav-links a:hover::after { width: 100%; }
 
 /* Burger gomb (mobil) */
 .nav-burger {
@@ -122,11 +105,9 @@ body {
     cursor: pointer;
     padding: 4px;
 }
-
 .nav-burger span {
     display: block;
-    width: 24px;
-    height: 1.5px;
+    width: 24px; height: 1.5px;
     background: var(--ink);
     transition: all 0.3s;
 }
@@ -139,7 +120,6 @@ body {
     border-top: 1px solid rgba(200,134,10,0.12);
     background: rgba(253,246,232,0.97);
 }
-
 .nav-mobile a {
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 1.05rem;
@@ -151,22 +131,13 @@ body {
     border-bottom: 1px solid rgba(200,134,10,0.1);
     transition: color 0.2s;
 }
-
-.nav-mobile a:last-child {
-    border-bottom: none;
-}
-
-.nav-mobile a:hover {
-    color: var(--rose);
-}
-
-.nav-mobile.open {
-    display: flex;
-}
+.nav-mobile a:last-child { border-bottom: none; }
+.nav-mobile a:hover { color: var(--rose); }
+.nav-mobile.open { display: flex; }
 
 /* ============================================================
-  HERO (NYITÓOLDAL)
-  ============================================================ */
+   HERO (NYITÓOLDAL)
+   ============================================================ */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -178,14 +149,8 @@ body {
     gap: 0;
 
     background:
-        linear-gradient(to bottom,
-            rgba(253,246,232,0.72) 0%,
-            rgba(253,246,232,0.55) 50%,
-            rgba(253,246,232,0.72) 100%
-        ),
-        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600')
-        center/cover no-repeat;
-
+        linear-gradient(to bottom, rgba(253,246,232,0.72) 0%, rgba(253,246,232,0.55) 50%, rgba(253,246,232,0.72) 100%),
+        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600') center/cover no-repeat;
     background-attachment: fixed;
 }
 
@@ -196,6 +161,7 @@ body {
     pointer-events: none;
 }
 
+/* Felső rész: név + visszaszámláló — kompakt */
 .hero-top {
     position: relative;
     z-index: 2;
@@ -238,7 +204,18 @@ body {
     color: var(--ink-soft);
 }
 
-/* Save the date */
+/* Virágos elválasztó a hero-ban */
+.hero-divider {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 620px;
+    margin: 10px auto;
+}
+
+.divider-svg { width: 100%; height: auto; display: block; }
+
+/* Save the date alsó kétharmad */
 .hero-savethedate {
     position: relative;
     z-index: 2;
@@ -295,13 +272,11 @@ body {
 }
 
 /* ============================================================
-  SZEKCIÓK
-  ============================================================ */
+   SZEKCIÓK
+   ============================================================ */
 .section {
     padding: 100px 20px;
     background-color: var(--cream);
-    position: relative;
-    overflow: visible;
 }
 
 .container {
@@ -309,9 +284,7 @@ body {
     margin: 0 auto;
 }
 
-.center {
-    text-align: center;
-}
+.center { text-align: center; }
 
 .section-eyebrow {
     font-family: 'EB Garamond', Georgia, serif;
@@ -354,10 +327,7 @@ body {
     color: var(--ink-soft);
 }
 
-.container strong {
-    color: var(--ink);
-    font-weight: 500;
-}
+.container strong { color: var(--ink); font-weight: 500; }
 
 .calligraphy-signature {
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -368,34 +338,17 @@ body {
     line-height: 1;
 }
 
-/* Szekció hátterek */
-.section-meghivo  {
-    background: linear-gradient(to bottom, var(--cream) 0%, #FAEEE5 100%);
-}
-
-.section-rsvp {
-    background: linear-gradient(to bottom, #FAEEE5 0%, #F0EEF8 100%);
-}
-
-.section-email {
-    background: linear-gradient(to bottom, #F0EEF8 0%, #EAF0F8 100%);
-}
-
-.section-rolunk {
-    background: linear-gradient(to bottom, #EAF0F8 0%, var(--cream) 100%);
-}
-
-.section-helyszin {
-    background: #FFFBEE;
-}
-
-.section-program {
-    background: #F8FBF2;
-}
+/* Hátterek szekciónként */
+.section-meghivo  { background: linear-gradient(to bottom, var(--cream) 0%, #FAEEE5 100%); }
+.section-rsvp     { background: linear-gradient(to bottom, #FAEEE5 0%, #F0EEF8 100%); }
+.section-email    { background: linear-gradient(to bottom, #F0EEF8 0%, #EAF0F8 100%); }
+.section-rolunk   { background: linear-gradient(to bottom, #EAF0F8 0%, var(--cream) 100%); }
+.section-helyszin { background: #FFFBEE; }
+.section-program  { background: #F8FBF2; }
 
 /* ============================================================
-  GOMBOK
-  ============================================================ */
+   GOMBOK
+   ============================================================ */
 .btn-wildflower {
     display: inline-block;
     margin-top: 28px;
@@ -410,36 +363,18 @@ body {
     transition: background 0.35s ease, color 0.35s ease;
 }
 
-.btn-rose {
-    color: var(--rose);
-}
+.btn-rose   { color: var(--rose); }
+.btn-rose:hover   { background: var(--rose); color: var(--cream); }
 
-.btn-rose:hover {
-    background: var(--rose);
-    color: var(--cream);
-}
+.btn-blue   { color: var(--blue); }
+.btn-blue:hover   { background: var(--blue); color: var(--cream); }
 
-.btn-blue {
-    color: var(--blue);
-}
-
-.btn-blue:hover {
-    background: var(--blue);
-    color: var(--cream);
-}
-
-.btn-green {
-    color: var(--green);
-}
-
-.btn-green:hover {
-    background: var(--green);
-    color: var(--cream);
-}
+.btn-green  { color: var(--green); }
+.btn-green:hover  { background: var(--green); color: var(--cream); }
 
 /* ============================================================
-  E-MAIL FELIRATKOZÁS
-  ============================================================ */
+   E-MAIL FELIRATKOZÁS
+   ============================================================ */
 .email-row {
     display: flex;
     flex-wrap: wrap;
@@ -461,13 +396,8 @@ body {
     transition: border-color 0.2s;
 }
 
-.email-input::placeholder {
-    color: #aaa;
-}
-
-.email-input:focus {
-    border-color: var(--blue);
-}
+.email-input::placeholder { color: #aaa; }
+.email-input:focus { border-color: var(--blue); }
 
 .small-note {
     font-size: 0.8rem;
@@ -477,8 +407,8 @@ body {
 }
 
 /* ============================================================
-  GALÉRIA
-  ============================================================ */
+   GALÉRIA
+   ============================================================ */
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -501,11 +431,9 @@ body {
 }
 
 /* ============================================================
-  COMING SOON BLOKK
-  ============================================================ */
-.coming-soon-block {
-    padding: 60px 0;
-}
+   COMING SOON BLOKK
+   ============================================================ */
+.coming-soon-block { padding: 60px 0; }
 
 .coming-soon-text {
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -527,40 +455,32 @@ body {
 }
 
 /* ============================================================
-  VIRÁGOS ELVÁLASZTÓK
-  ============================================================ */
+   VIRÁGOS ELVÁLASZTÓK SZEKCIÓK KÖZÖTT
+   ============================================================ */
 .flower-row {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin: 60px 0;
     padding: 0;
-    width: 100%;
-    overflow: visible;
+    margin: -30px 0;
+    position: relative;
+    z-index: 2;
     pointer-events: none;
 }
 
-.flower-row::before,
-.flower-row::after {
-    content: "";
-    flex: 1;
-    height: 0.5px;
-    background-color: #e6b800;
-    max-width: 200px;
-}
-
 .flower-divider-img {
-    width: 300px;
+    width: min(520px, 88vw);
     height: auto;
     display: block;
+    /* PNG átlátszóság megtartva — fehér háttér elrejtve */
     mix-blend-mode: multiply;
 }
 
+/* A második elválasztó tükrözve, hogy ne ismétlődjön gépiesen */
 .flower-divider-flip {
     transform: scaleX(-1);
 }
 
+/* Lábléc kis virág */
 .flower-divider-footer {
     width: min(320px, 70vw);
     opacity: 0.75;
@@ -568,8 +488,8 @@ body {
 }
 
 /* ============================================================
-  LÁBLÉC
-  ============================================================ */
+   LÁBLÉC
+   ============================================================ */
 footer {
     text-align: center;
     padding: 50px 20px;
@@ -577,9 +497,7 @@ footer {
     color: var(--cream);
 }
 
-.footer-flower {
-    margin-bottom: 16px;
-}
+.footer-flower { margin-bottom: 16px; }
 
 .footer-names {
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -599,75 +517,37 @@ footer {
 }
 
 /* ============================================================
-  SCROLL ANIMÁCIÓ
-  ============================================================ */
+   SCROLL ANIMÁCIÓ
+   ============================================================ */
 .reveal {
     opacity: 0;
     transform: translateY(28px);
     transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
 
-.reveal.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+.reveal.show { opacity: 1; transform: translateY(0); }
 
 /* ============================================================
-  RESZPONZÍV (MOBIL)
-  ============================================================ */
+   RESZPONZÍV (MOBIL)
+   ============================================================ */
 @media (max-width: 700px) {
-    .nav-links {
-        display: none;
-    }
+    .nav-links { display: none; }
+    .nav-burger { display: flex; }
 
-    .nav-burger {
-        display: flex;
-    }
+    .hero-top { padding: 40px 20px 28px; }
+    .hero-title { font-size: clamp(3.2rem, 12vw, 5rem); }
 
-    .hero-top {
-        padding: 40px 20px 28px;
-    }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-grid img { height: 240px; }
 
-    .hero-title {
-        font-size: clamp(3.2rem, 12vw, 5rem);
-    }
+    .section { padding: 70px 16px; }
 
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-grid img {
-        height: 240px;
-    }
-
-    .section {
-        padding: 70px 16px;
-    }
-
-    .email-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .email-input {
-        width: 100%;
-        max-width: 320px;
-    }
+    .email-row { flex-direction: column; align-items: center; }
+    .email-input { width: 100%; max-width: 320px; }
 }
 
-/* Mozgást csökkentő mód */
+/* Mozgást csökkentő mód (hozzáférhetőség) */
 @media (prefers-reduced-motion: reduce) {
-    .reveal {
-        transition: none;
-    }
-
-    html {
-        scroll-behavior: auto;
-    }
+    .reveal { transition: none; }
+    html { scroll-behavior: auto; }
 }
-
-/* ============================================================
-  SZEKCIÓK KÖZTI FINOM ÁTMENET
-  ============================================================ */
-section::after {
-    content: "";
