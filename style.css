@@ -546,7 +546,7 @@ body {
     content: "";
     flex: 1;
     height: 0.5px;
-    background-color: #e6b800;
+    background-color: transparent;
     max-width: 200px;
 }
 
