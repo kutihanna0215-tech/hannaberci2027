@@ -539,6 +539,7 @@ body {
     width: 100%;
     overflow: visible;
     pointer-events: none;
+    background: transparent;
 }
 
 .flower-row::before,
@@ -546,7 +547,7 @@ body {
     content: "";
     flex: 1;
     height: 0.5px;
-    background-color: transparent;
+    background-color: #e6b800;
     max-width: 200px;
 }
 
