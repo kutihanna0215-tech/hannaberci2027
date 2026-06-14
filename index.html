@@ -1,143 +1,21 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hanna & Berci | 2027.06.26.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanna & Berci | 2027.06.26.</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVIGÁCIÓ -->
-<nav class="site-nav" id="site-nav">
-<div class="nav-inner">
-<a class="nav-logo" href="#home">H & B</a>
-<ul class="nav-links">
-<li><a href="#meghivo">Meghívó</a></li>
-<li><a href="#rsvp">Visszajelzés</a></li>
-<li><a href="#rolunk">Rólunk</a></li>
-<li><a href="#helyszin">Helyszín</a></li>
-<li><a href="#program">Program</a></li>
-<li><a href="#ertesites">Értesítő</a></li>
-</ul>
-<button class="nav-burger" id="nav-burger" aria-label="Menü megnyitása">
-<span></span><span></span><span></span>
-</button>
-</div>
-<!-- Mobile menu -->
-<div class="nav-mobile" id="nav-mobile">
-<a href="#meghivo">Meghívó</a>
-<a href="#rsvp">Visszajelzés</a>
-<a href="#rolunk">Rólunk</a>
-<a href="#helyszin">Helyszín</a>
-<a href="#program">Program</a>
-<a href="#ertesites">Értesítő</a>
-</div>
-</nav>
-
-<!-- 1. NYITÓOLDAL -->
-<header class="hero" id="home">
-<div class="hero-overlay"></div>
-
-<div class="hero-top reveal">
-<p class="hero-eyebrow">2027 · június · 26.</p>
-<h1 class="hero-title">Hanna <span class="amp">&</span> Berci</h1>
-<div class="countdown" id="countdown">…</div>
-</div>  
-
-<!-- Save the date kép helye -->
-<div class="hero-savethedate reveal">
-<div class="std-frame">
-<p class="std-label">Save the Date</p>
-<div class="std-img-placeholder">
-<!-- IDE KERÜL A SAVE THE DATE KÉP -->
-<!-- <img src="kepetek.jpg" alt="Save the Date"> -->
-<div class="std-placeholder-inner">
-<svg viewBox="0 0 80 80" width="50" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
-<circle cx="40" cy="32" r="14" stroke="#2D5016" stroke-width="1.5" fill="none"/>
-<line x1="40" y1="46" x2="40" y2="65" stroke="#2D5016" stroke-width="1.5"/>
-<line x1="25" y1="55" x2="55" y2="55" stroke="#2D5016" stroke-width="1.5"/>
-<ellipse cx="28" cy="28" rx="6" ry="9" fill="#C4435A" opacity="0.6"/>
-<ellipse cx="52" cy="28" rx="6" ry="9" fill="#C8860A" opacity="0.6"/>
-</svg>
-<p>A ti fotótok kerül ide</p>
-</div>
-</div>
-</div>
-</div>
-</header>
-
-<!-- VIRÁG ELVÁLASZTÓ -->
-<div class="flower-row" aria-hidden="true">
-<img src="divider_transp.png" alt="" class="flower-divider-img">
-</div>
-
-<!-- 2. MEGHÍVÓ -->
-<section class="section section-meghivo" id="meghivo">
-<div class="container reveal center">
-<p class="section-eyebrow">— Meghívó —</p>
-<h2 class="section-title">Velünk ünnepelnétek?</h2>
-<div class="inline-divider"></div>
-<p class="lead-italic">A legszebb pillanatok akkor nyernek igazi értelmet,<br>ha azokkal oszthatjuk meg, akiket a legjobban szeretünk.</p>
-<p>Örömmel osztjuk meg veletek, hogy <strong>2027. június 26-án</strong> összeházasodunk.</p>
-<p>Szeretnénk, ha ezen a különleges napon velünk ünnepelnétek. Ezen a weboldalon fogunk megosztani veletek minden fontos információt az esküvővel kapcsolatban.</p>
-<p>Még van egy kis idő a nagy napig, de az oldal már most elindul — ahogy közeledik az esküvő, egyre több részlet kerül majd fel.</p>
-<p>Nagyon várjuk, hogy együtt ünnepelhessünk veletek!</p>
-<p class="calligraphy-signature">Hanna &amp; Berci</p>
-</div>
-</section>
-
-<!-- VIRÁG ELVÁLASZTÓ -->
-<div class="flower-row" aria-hidden="true">
-<img src="divider_transp.png" alt="" class="flower-divider-img">
-</div>
-
-<!-- 3. RSVP -->
-<section class="section section-rsvp" id="rsvp">
-<div class="container reveal center">
-<p class="section-eyebrow" style="color: var(--rose)">— Visszajelzés —</p>
-<h2 class="section-title" style="color: var(--rose)">Jelezzetek vissza!</h2>
-<div class="inline-divider" style="background: var(--rose)"></div>
-<p>Szeretnénk, ha minden tökéletes lenne ezen a napon. A szervezés megkönnyítése érdekében kérünk titeket, hogy töltsétek ki az alábbi űrlapot.</p>
-<p>Az itt megadott információkat kizárólag az esküvő szervezéséhez használjuk fel.<br>Köszönjük a segítségeteket!</p>
-<a class="btn-wildflower btn-rose" href="#" target="_blank">Google Űrlap Kitöltése</a>
-</div>
-</section>
-
-    <!-- VIRÁG ELVÁLASZTÓ -->
-<div class="flower-row" aria-hidden="true">
-    <img src="divider_transp.png" alt="" class="flower-divider-img">
-</div>
-    
-<!-- 5. RÓLUNK -->
-<section class="section section-rolunk" id="rolunk">
-<div class="container reveal center">
-@@ -126,6 +131,11 @@
-</div>
-</section>
-
-<!-- VIRÁG ELVÁLASZTÓ -->
-<div class="flower-row" aria-hidden="true">
-    <img src="divider_transp.png" alt="" class="flower-divider-img">
-</div>
-    
-<!-- 6. HELYSZÍN -->
-<section class="section section-helyszin" id="helyszin">
-<div class="container reveal center">
-@@ -139,6 +149,11 @@
-</div>
-</section>
-
-<!-- VIRÁG ELVÁLASZTÓ -->
-<div class="flower-row" aria-hidden="true">
-    <img src="divider_transp.png" alt="" class="flower-divider-img">
-</div>
-    
-<!-- 7. PROGRAM -->
-<section class="section section-program" id="program">
-<div class="container reveal center">
+    <!-- NAVIGÁCIÓ -->
+    <nav class="site-nav" id="site-nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="#home">H & B</a>
+            <ul class="nav-links">
+                <li><a href="#meghivo">
