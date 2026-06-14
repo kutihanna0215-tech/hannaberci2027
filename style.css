@@ -299,7 +299,6 @@ body {
   ============================================================ */
 .section {
     padding: 100px 20px;
-    background-color: var(--cream);
     position: relative;
     overflow: visible;
 }
