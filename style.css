@@ -580,13 +580,13 @@ footer {
 .flower-row::after {
     content: "";
     flex: 1;
-    height: 2px; /* a sárga csík vastagsága */
+    height: 1px; /* a sárga csík vastagsága */
     background-color: #e6b800; /* ugyanaz a sárga, mint a kezdőképnél */
     max-width: 200px; /* ne legyen túl hosszú a csík */
 }
 
 .flower-divider-img {
-    width: 100px; /* <<< EZ adja a 3–5 cm-es méretet */
+    width: 200px; /* <<< EZ adja a 3–5 cm-es méretet */
     height: auto;
     display: block;
 }
