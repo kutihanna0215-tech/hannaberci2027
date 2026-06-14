@@ -546,6 +546,20 @@ footer {
     .email-input { width: 100%; max-width: 320px; }
 }
 
+.flower-row {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.flower-divider-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: transparent;
+}
+
 /* Mozgást csökkentő mód (hozzáférhetőség) */
 @media (prefers-reduced-motion: reduce) {
     .reveal { transition: none; }
