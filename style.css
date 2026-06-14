@@ -213,7 +213,7 @@ body {
     margin: 10px auto;
 }
 
-.divider-svg { width: 100%; height: auto; display: block; }
+.divider-svg { width: 100%; height: auto; display: block; background-color: transparent; }
 
 /* Save the date alsó kétharmad */
 .hero-savethedate {
