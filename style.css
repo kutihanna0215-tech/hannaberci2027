@@ -669,5 +669,17 @@ footer {
 /* ============================================================
   SZEKCIÓK KÖZTI FINOM ÁTMENET
   ============================================================ */
+
+/* --- Gradiens háttér minden dividernek ---
+   Felső szín = megelőző szekció aljának háttérszíne
+   Alsó szín  = következő szekció tetejének háttérszíne    */
+ 
+.fd-cream-cream    { background: linear-gradient(to bottom, #FDF6E8, #FDF6E8); }
+.fd-peach-lavender { background: linear-gradient(to bottom, #FAEEE5, #F0EEF8); }
+.fd-lavender-blue  { background: linear-gradient(to bottom, #F0EEF8, #EAF0F8); }
+.fd-cream-yellow   { background: linear-gradient(to bottom, #FDF6E8, #FFFBEE); }
+.fd-yellow-mint    { background: linear-gradient(to bottom, #FFFBEE, #F8FBF2); }
+.fd-mint-blue      { background: linear-gradient(to bottom, #F8FBF2, #EAF0F8); }
+ 
 section::after {
     content: "";
