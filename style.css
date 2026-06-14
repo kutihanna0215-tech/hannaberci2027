@@ -565,3 +565,28 @@ footer {
     .reveal { transition: none; }
     html { scroll-behavior: auto; }
 }
+
+/* --- VIRÁGOS DIVIDER STYLING --- */
+
+.flower-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* távolság a csík és a virág között */
+    margin: 40px 0; /* tér a szakaszok között */
+}
+
+.flower-row::before,
+.flower-row::after {
+    content: "";
+    flex: 1;
+    height: 2px; /* a sárga csík vastagsága */
+    background-color: #e6b800; /* ugyanaz a sárga, mint a kezdőképnél */
+    max-width: 200px; /* ne legyen túl hosszú a csík */
+}
+
+.flower-divider-img {
+    width: 100px; /* <<< EZ adja a 3–5 cm-es méretet */
+    height: auto;
+    display: block;
+}
