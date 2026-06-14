@@ -13,137 +13,214 @@
 </head>
 <body>
 
-    <!-- NAVIGÁCIÓ -->
-    <nav class="site-nav" id="site-nav">
-        <div class="nav-inner">
-            <a class="nav-logo" href="#home">H & B</a>
-            <ul class="nav-links">
-                <li><a href="#meghivo">Meghívó</a></li>
-                <li><a href="#rsvp">Visszajelzés</a></li>
-                <li><a href="#rolunk">Rólunk</a></li>
-                <li><a href="#helyszin">Helyszín</a></li>
-                <li><a href="#program">Program</a></li>
-                <li><a href="#ertesites">Értesítő</a></li>
-            </ul>
+<!-- NAVIGÁCIÓ -->
+<nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+        <a class="nav-logo" href="#home">H & B</a>
+        <ul class="nav-links">
+            <li><a href="#meghivo">Meghívó</a></li>
+            <li><a href="#rsvp">Visszajelzés</a></li>
+            <li><a href="#rolunk">Rólunk</a></li>
+            <li><a href="#helyszin">Helyszín</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#ertesites">Értesítő</a></li>
+        </ul>
+        <button class="nav-burger" id="nav-burger" aria-label="Menü megnyitása">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="nav-mobile">
+        <a href="#meghivo">Meghívó</a>
+        <a href="#rsvp">Visszajelzés</a>
+        <a href="#rolunk">Rólunk</a>
+        <a href="#helyszin">Helyszín</a>
+        <a href="#program">Program</a>
+        <a href="#ertesites">Értesítő</a>
+    </div>
+</nav>
 
-            <button class="nav-burger" id="nav-burger" aria-label="Menü megnyitása">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+<!-- 1. NYITÓOLDAL -->
+<header class="hero" id="home">
+    <div class="hero-overlay"></div>
 
-        <!-- Mobile menu -->
-        <div class="nav-mobile" id="nav-mobile">
-            <a href="#meghivo">Meghívó</a>
-            <a href="#rsvp">Visszajelzés</a>
-            <a href="#rolunk">Rólunk</a>
-            <a href="#helyszin">Helyszín</a>
-            <a href="#program">Program</a>
-            <a href="#ertesites">Értesítő</a>
-        </div>
-    </nav>
+    <div class="hero-top reveal">
+        <p class="hero-eyebrow">2027 · június · 26.</p>
+        <h1 class="hero-title">Hanna <span class="amp">&</span> Berci</h1>
+        <div class="countdown" id="countdown">…</div>
+    </div>
 
-    <!-- 1. NYITÓOLDAL -->
-    <header class="hero" id="home">
-        <div class="hero-overlay"></div>
+    <!-- Virágdísz elválasztó -->
+    <div class="hero-divider">
+        <svg viewBox="0 0 600 60" xmlns="http://www.w3.org/2000/svg" class="divider-svg">
+            <line x1="0" y1="30" x2="220" y2="30" stroke="#C8860A" stroke-width="0.8" opacity="0.6"/>
+            <g transform="translate(300,30)">
+                <!-- középső virág -->
+                <circle cx="0" cy="0" r="4" fill="#C4435A"/>
+                <ellipse cx="0" cy="-11" rx="4" ry="7" fill="#C4435A" opacity="0.85" transform="rotate(0)"/>
+                <ellipse cx="0" cy="-11" rx="4" ry="7" fill="#7C5C9E" opacity="0.8" transform="rotate(60)"/>
+                <ellipse cx="0" cy="-11" rx="4" ry="7" fill="#4B6CB7" opacity="0.8" transform="rotate(120)"/>
+                <ellipse cx="0" cy="-11" rx="4" ry="7" fill="#C8860A" opacity="0.85" transform="rotate(180)"/>
+                <ellipse cx="0" cy="-11" rx="4" ry="7" fill="#2D5016" opacity="0.8" transform="rotate(240)"/>
+                <ellipse cx="0" cy="-11" rx="4" ry="7" fill="#C4435A" opacity="0.7" transform="rotate(300)"/>
+                <!-- bal kis virág -->
+                <g transform="translate(-50, 0)">
+                    <circle cx="0" cy="0" r="2.5" fill="#C8860A"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#C8860A" opacity="0.8" transform="rotate(0)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#4B6CB7" opacity="0.8" transform="rotate(72)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#7C5C9E" opacity="0.8" transform="rotate(144)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#C4435A" opacity="0.8" transform="rotate(216)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#2D5016" opacity="0.8" transform="rotate(288)"/>
+                </g>
+                <!-- jobb kis virág -->
+                <g transform="translate(50, 0)">
+                    <circle cx="0" cy="0" r="2.5" fill="#7C5C9E"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#7C5C9E" opacity="0.8" transform="rotate(0)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#C4435A" opacity="0.8" transform="rotate(72)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#C8860A" opacity="0.8" transform="rotate(144)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#4B6CB7" opacity="0.8" transform="rotate(216)"/>
+                    <ellipse cx="0" cy="-7" rx="2.5" ry="5" fill="#2D5016" opacity="0.8" transform="rotate(288)"/>
+                </g>
+                <!-- levélkék -->
+                <ellipse cx="-80" cy="5" rx="12" ry="5" fill="#2D5016" opacity="0.5" transform="rotate(-20, -80, 5)"/>
+                <ellipse cx="-95" cy="2" rx="9" ry="4" fill="#2D5016" opacity="0.4" transform="rotate(-35, -95, 2)"/>
+                <ellipse cx="80" cy="5" rx="12" ry="5" fill="#2D5016" opacity="0.5" transform="rotate(20, 80, 5)"/>
+                <ellipse cx="95" cy="2" rx="9" ry="4" fill="#2D5016" opacity="0.4" transform="rotate(35, 95, 2)"/>
+            </g>
+            <line x1="380" y1="30" x2="600" y2="30" stroke="#C8860A" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+    </div>
 
-        <div class="hero-top reveal">
-            <p class="hero-eyebrow">2027 · június · 26.</p>
-            <h1 class="hero-title">Hanna <span class="amp">&</span> Berci</h1>
-            <div class="countdown" id="countdown">…</div>
-        </div>
-
-        <!-- Save the date kép helye -->
-        <div class="hero-savethedate reveal">
-            <div class="std-frame">
-                <p class="std-label">Save the Date</p>
-
-                <div class="std-img-placeholder">
-                    <!-- IDE KERÜL A SAVE THE DATE KÉP -->
-                    <!-- <img src="kepetek.jpg" alt="Save the Date"> -->
-
-                    <div class="std-placeholder-inner">
-                        <svg viewBox="0 0 80 80" width="50" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
-                            <circle cx="40" cy="32" r="14" stroke="#2D5016" stroke-width="1.5" fill="none"/>
-                            <line x1="40" y1="46" x2="40" y2="65" stroke="#2D5016" stroke-width="1.5"/>
-                            <line x1="25" y1="55" x2="55" y2="55" stroke="#2D5016" stroke-width="1.5"/>
-                            <ellipse cx="28" cy="28" rx="6" ry="9" fill="#C4435A" opacity="0.6"/>
-                            <ellipse cx="52" cy="28" rx="6" ry="9" fill="#C8860A" opacity="0.6"/>
-                        </svg>
-                        <p>A ti fotótok kerül ide</p>
-                    </div>
+    <!-- Save the date kép helye -->
+    <div class="hero-savethedate reveal">
+        <div class="std-frame">
+            <p class="std-label">Save the Date</p>
+            <div class="std-img-placeholder">
+                <!-- IDE KERÜL A SAVE THE DATE KÉP -->
+                <!-- <img src="kepetek.jpg" alt="Save the Date"> -->
+                <div class="std-placeholder-inner">
+                    <svg viewBox="0 0 80 80" width="50" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
+                        <circle cx="40" cy="32" r="14" stroke="#2D5016" stroke-width="1.5" fill="none"/>
+                        <line x1="40" y1="46" x2="40" y2="65" stroke="#2D5016" stroke-width="1.5"/>
+                        <line x1="25" y1="55" x2="55" y2="55" stroke="#2D5016" stroke-width="1.5"/>
+                        <ellipse cx="28" cy="28" rx="6" ry="9" fill="#C4435A" opacity="0.6"/>
+                        <ellipse cx="52" cy="28" rx="6" ry="9" fill="#C8860A" opacity="0.6"/>
+                    </svg>
+                    <p>A ti fotótok kerül ide</p>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- VIRÁG ELVÁLASZTÓ -->
-    <div class="flower-row" aria-hidden="true">
-        <img src="divider_transp.png" alt="" class="flower-divider-img">
     </div>
+</header>
 
-    <!-- 2. MEGHÍVÓ -->
-    <section class="section section-meghivo" id="meghivo">
-        <div class="container reveal center">
-            <p class="section-eyebrow">— Meghívó —</p>
-            <h2 class="section-title">Velünk ünnepelnétek?</h2>
-            <div class="inline-divider"></div>
+<!-- VIRÁG ELVÁLASZTÓ -->
+<div class="flower-row" aria-hidden="true">
+    <img src="divider_1.png" alt="" class="flower-divider-img">
+</div>
 
-            <p class="lead-italic">
-                A legszebb pillanatok akkor nyernek igazi értelmet,<br>
-                ha azokkal oszthatjuk meg, akiket a legjobban szeretünk.
-            </p>
-
-            <p>Örömmel osztjuk meg veletek, hogy <strong>2027. június 26-án</strong> összeházasodunk.</p>
-            <p>Szeretnénk, ha ezen a különleges napon velünk ünnepelnétek. Ezen a weboldalon fogunk megosztani veletek minden fontos információt az esküvővel kapcsolatban.</p>
-            <p>Még van egy kis idő a nagy napig, de az oldal már most elindul — ahogy közeledik az esküvő, egyre több részlet kerül majd fel.</p>
-            <p>Nagyon várjuk, hogy együtt ünnepelhessünk veletek!</p>
-
-            <p class="calligraphy-signature">Hanna &amp; Berci</p>
-        </div>
-    </section>
-
-    <!-- VIRÁG ELVÁLASZTÓ -->
-    <div class="flower-row" aria-hidden="true">
-        <img src="divider_transp.png" alt="" class="flower-divider-img">
+<!-- 2. MEGHÍVÓ -->
+<section class="section section-meghivo" id="meghivo">
+    <div class="container reveal center">
+        <p class="section-eyebrow">— Meghívó —</p>
+        <h2 class="section-title">Velünk ünnepelnétek?</h2>
+        <div class="inline-divider"></div>
+        <p class="lead-italic">A legszebb pillanatok akkor nyernek igazi értelmet,<br>ha azokkal oszthatjuk meg, akiket a legjobban szeretünk.</p>
+        <p>Örömmel osztjuk meg veletek, hogy <strong>2027. június 26-án</strong> összeházasodunk.</p>
+        <p>Szeretnénk, ha ezen a különleges napon velünk ünnepelnétek. Ezen a weboldalon fogunk megosztani veletek minden fontos információt az esküvővel kapcsolatban.</p>
+        <p>Még van egy kis idő a nagy napig, de az oldal már most elindul — ahogy közeledik az esküvő, egyre több részlet kerül majd fel.</p>
+        <p>Nagyon várjuk, hogy együtt ünnepelhessünk veletek!</p>
+        <p class="calligraphy-signature">Hanna &amp; Berci</p>
     </div>
+</section>
 
-    <!-- 3. RSVP -->
-    <section class="section section-rsvp" id="rsvp">
-        <div class="container reveal center">
-            <p class="section-eyebrow" style="color: var(--rose)">— Visszajelzés —</p>
-            <h2 class="section-title" style="color: var(--rose)">Jelezzetek vissza!</h2>
-            <div class="inline-divider" style="background: var(--rose)"></div>
+<!-- VIRÁG ELVÁLASZTÓ -->
+<div class="flower-row" aria-hidden="true">
+    <img src="divider_1.png" alt="" class="flower-divider-img">
+</div>
 
-            <p>Szeretnénk, ha minden tökéletes lenne ezen a napon. A szervezés megkönnyítése érdekében kérünk titeket, hogy töltsétek ki az alábbi űrlapot.</p>
-            <p>Az itt megadott információkat kizárólag az esküvő szervezéséhez használjuk fel.<br>Köszönjük a segítségeteket!</p>
-
-            <a class="btn-wildflower btn-rose" href="#" target="_blank">Google Űrlap Kitöltése</a>
-        </div>
-    </section>
-
-    <!-- VIRÁG ELVÁLASZTÓ -->
-    <div class="flower-row" aria-hidden="true">
-        <img src="divider_transp.png" alt="" class="flower-divider-img">
+<!-- 3. RSVP -->
+<section class="section section-rsvp" id="rsvp">
+    <div class="container reveal center">
+        <p class="section-eyebrow" style="color: var(--rose)">— Visszajelzés —</p>
+        <h2 class="section-title" style="color: var(--rose)">Jelezzetek vissza!</h2>
+        <div class="inline-divider" style="background: var(--rose)"></div>
+        <p>Szeretnénk, ha minden tökéletes lenne ezen a napon. A szervezés megkönnyítése érdekében kérünk titeket, hogy töltsétek ki az alábbi űrlapot.</p>
+        <p>Az itt megadott információkat kizárólag az esküvő szervezéséhez használjuk fel.<br>Köszönjük a segítségeteket!</p>
+        <a class="btn-wildflower btn-rose" href="#" target="_blank">Google Űrlap Kitöltése</a>
     </div>
+</section>
 
-    <!-- 5. RÓLUNK -->
-    <section class="section section-rolunk" id="rolunk">
-        <div class="container reveal center">
-            <!-- … -->
+<!-- 5. RÓLUNK -->
+<section class="section section-rolunk" id="rolunk">
+    <div class="container reveal center">
+        <p class="section-eyebrow" style="color: var(--lavender)">— A mi történetünk —</p>
+        <h2 class="section-title" style="color: var(--lavender)">Rólunk</h2>
+        <div class="inline-divider" style="background: var(--lavender)"></div>
+        <p>Mivel sokan különböző időszakaiból ismertek minket, gondoltuk megosztunk néhány közös emléket is.</p>
+        <p>Pár kedvenc fotó az elmúlt évekből — utazásokról, kirándulásokról és hétköznapi pillanatokból, amelyekből összeállt a mi történetünk.</p>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800" alt="Fotó 1">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800" alt="Fotó 2">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800" alt="Fotó 3">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800" alt="Fotó 4">
         </div>
-    </section>
-
-    <!-- VIRÁG ELVÁLASZTÓ -->
-    <div class="flower-row" aria-hidden="true">
-        <img src="divider_transp.png" alt="" class="flower-divider-img">
     </div>
+</section>
 
-    <!-- 6. HELYSZÍN -->
-    <section class="section section-helyszin" id="helyszin">
-        <div class="container reveal center">
-            <!-- … -->
+<!-- 6. HELYSZÍN -->
+<section class="section section-helyszin" id="helyszin">
+    <div class="container reveal center">
+        <p class="section-eyebrow" style="color: var(--gold)">— Ahol találkozunk —</p>
+        <h2 class="section-title" style="color: var(--gold)">Helyszín</h2>
+        <div class="inline-divider" style="background: var(--gold)"></div>
+        <div class="coming-soon-block">
+            <p class="coming-soon-text">hamarosan…</p>
+            <p class="coming-soon-sub">A helyszín és a hasznos információk (szállás, megközelítés) rövidesen felkerülnek.</p>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- 7. PROGRAM -->
+<section class="section section-program" id="program">
+    <div class="container reveal center">
+        <p class="section-eyebrow" style="color: var(--green)">— A nap menete —</p>
+        <h2 class="section-title" style="color: var(--green)">Program</h2>
+        <div class="inline-divider" style="background: var(--green)"></div>
+        <div class="coming-soon-block">
+            <p class="coming-soon-text">hamarosan…</p>
+            <p class="coming-soon-sub">A részletes program az esküvőhöz közeledve kerül majd fel.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VIRÁG ELVÁLASZTÓ -->
+<div class="flower-row" aria-hidden="true">
+    <img src="divider_1.png" alt="" class="flower-divider-img flower-divider-flip">
+</div>
+
+<!-- 8. EMAIL FELIRATKOZÁS -->
+<section class="section section-email" id="ertesites">
+    <div class="container reveal center">
+        <p class="section-eyebrow" style="color: var(--blue)">— Értesítő —</p>
+        <h2 class="section-title" style="color: var(--blue)">Értesítést kérek</h2>
+        <div class="inline-divider" style="background: var(--blue)"></div>
+        <p>Mivel még sok részlet szervezés alatt áll, iratkozz fel e-mail listánkra! Nem fogunk spammelni — csak azonnal szólunk, ha új fontos információ kerül fel az oldalra.</p>
+        <div class="email-row">
+            <input type="email" placeholder="e-mail cím…" class="email-input">
+            <a href="#" class="btn-wildflower btn-blue">Feliratkozom</a>
+        </div>
+        <p class="small-note">(Ide kerül majd a működő feliratkozó doboz)</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-flower" aria-hidden="true">
+        <img src="divider_1.png" alt="" class="flower-divider-img flower-divider-footer">
+    </div>
+    <p class="footer-names">Hanna &amp; Berci</p>
+    <p class="footer-date">2027 · június · 26.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
