@@ -707,6 +707,4 @@ footer {
 .fd-yellow-mint    { background: linear-gradient(to bottom, #FFFBEE, #F8FBF2); }
 .fd-mint-blue      { background: linear-gradient(to bottom, #F8FBF2, #EAF0F8); }
  
-section::after {
-    content: "";
 
