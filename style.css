@@ -701,3 +701,29 @@ footer {
  
 section::after {
     content: "";
+
+.masonry {
+    column-count: 3;
+    column-gap: 16px;
+}
+
+.masonry img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Reszponzív töréspontok */
+@media (max-width: 768px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .masonry {
+        column-count: 1;
+    }
+}
