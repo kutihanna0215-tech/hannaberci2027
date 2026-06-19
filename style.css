@@ -299,8 +299,8 @@ body {
   ============================================================ */
 .section {
     padding: 0 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     position: relative;
     overflow: visible;
     background-color: transparent;
