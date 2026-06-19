@@ -576,6 +576,14 @@ body {
     margin-bottom: 12px;
 }
 
+.section-before-divider {
+    padding-bottom: 0;
+}
+
+.section-after-divider {
+    padding-top: 0;
+}
+
 /* ============================================================
   LÁBLÉC
   ============================================================ */
