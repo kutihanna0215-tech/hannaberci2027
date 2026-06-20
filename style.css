@@ -379,20 +379,20 @@ body {
     background: linear-gradient(to bottom, #FAEEE5 0%, #F0EEF8 100%);
 }
 
-.section-email {
-    background: linear-gradient(to bottom, #F0EEF8 0%, #EAF0F8 100%);
-}
-
 .section-rolunk {
-    background: linear-gradient(to bottom, #EAF0F8 0%, var(--cream) 100%);
+    background: linear-gradient(to bottom, #EAF0F8 0%, #FFFBEE 100%);
 }
 
 .section-helyszin {
-    background: #FFFBEE;
+    background: linear-gradient(to bottom, #FFFBEE 0%, #F8FBF2 100%);
 }
 
 .section-program {
-    background: #F8FBF2;
+    background: linear-gradient(to bottom, #F8FBF2 0%, #F0EEF8 100%);
+}
+
+.section-email {
+    background: linear-gradient(to bottom, #F0EEF8 0%, #EAF0F8 100%);
 }
 
 .section-divider {
@@ -692,43 +692,7 @@ footer {
     }
 }
 
-/* ============================================================
-  SZEKCIÓK KÖZTI FINOM ÁTMENET
-  ============================================================ */
 
-/* --- Gradiens háttér minden dividernek ---
-   Felső szín = megelőző szekció aljának háttérszíne
-   Alsó szín  = következő szekció tetejének háttérszíne    */
-
- /* 1. Meghívó: krém → barack */
-.section-meghivo {
-    background: linear-gradient(to bottom, #FDF6E8 0%, #FAEEE5 100%);
-}
-
-/* 2. RSVP: barack → levendula */
-.section-rsvp {
-    background: linear-gradient(to bottom, #FAEEE5 0%, #F0EEF8 100%);
-}
-
-/* 3. Rólunk: levendula → krém */
-.section-rolunk {
-    background: linear-gradient(to bottom, #F0EEF8 0%, #FDF6E8 100%);
-}
-
-/* 4. Helyszín: krém → sárgás */
-.section-helyszin {
-    background: linear-gradient(to bottom, #FDF6E8 0%, #FFFBEE 100%);
-}
-
-/* 5. Program: sárgás → menta */
-.section-program {
-    background: linear-gradient(to bottom, #FFFBEE 0%, #F8FBF2 100%);
-}
-
-/* 6. Email: menta → levendula */
-.section-email {
-    background: linear-gradient(to bottom, #F8FBF2 0%, #EAF0F8 100%);
-}
 
  
 
