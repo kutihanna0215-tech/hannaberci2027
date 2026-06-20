@@ -548,7 +548,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 0px;
     padding: 0;
     width: 100%;
@@ -699,12 +699,36 @@ footer {
 /* --- Gradiens háttér minden dividernek ---
    Felső szín = megelőző szekció aljának háttérszíne
    Alsó szín  = következő szekció tetejének háttérszíne    */
- 
-.fd-cream-cream    { background: linear-gradient(to bottom, #FDF6E8, #FDF6E8); }
-.fd-peach-lavender { background: linear-gradient(to bottom, #FAEEE5, #F0EEF8); }
-.fd-lavender-blue  { background: linear-gradient(to bottom, #F0EEF8, #EAF0F8); }
-.fd-cream-yellow   { background: linear-gradient(to bottom, #FDF6E8, #FFFBEE); }
-.fd-yellow-mint    { background: linear-gradient(to bottom, #FFFBEE, #F8FBF2); }
-.fd-mint-blue      { background: linear-gradient(to bottom, #F8FBF2, #EAF0F8); }
+
+ /* 1. Meghívó: krém → barack */
+.section-meghivo {
+    background: linear-gradient(to bottom, #FDF6E8 0%, #FAEEE5 100%);
+}
+
+/* 2. RSVP: barack → levendula */
+.section-rsvp {
+    background: linear-gradient(to bottom, #FAEEE5 0%, #F0EEF8 100%);
+}
+
+/* 3. Rólunk: levendula → krém */
+.section-rolunk {
+    background: linear-gradient(to bottom, #F0EEF8 0%, #FDF6E8 100%);
+}
+
+/* 4. Helyszín: krém → sárgás */
+.section-helyszin {
+    background: linear-gradient(to bottom, #FDF6E8 0%, #FFFBEE 100%);
+}
+
+/* 5. Program: sárgás → menta */
+.section-program {
+    background: linear-gradient(to bottom, #FFFBEE 0%, #F8FBF2 100%);
+}
+
+/* 6. Email: menta → levendula */
+.section-email {
+    background: linear-gradient(to bottom, #F8FBF2 0%, #EAF0F8 100%);
+}
+
  
 
