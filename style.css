@@ -43,9 +43,9 @@ body {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
-    background: rgba(253, 246, 232, 0.92);
+    background: rgba(255, 248, 240, 0.92);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(200, 134, 10, 0.18);
+    border-bottom: 1px solid rgba(232, 160, 0, 0.18);
     transition: box-shadow 0.3s;
 }
 
@@ -136,8 +136,8 @@ body {
     display: none;
     flex-direction: column;
     padding: 16px 30px 20px;
-    border-top: 1px solid rgba(200,134,10,0.12);
-    background: rgba(253,246,232,0.97);
+    border-top: 1px solid rgba(232,160,0,0.12);
+    background: rgba(255,248,240,0.97);
 }
 
 .nav-mobile a {
@@ -148,7 +148,7 @@ body {
     color: var(--ink-soft);
     text-decoration: none;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(200,134,10,0.1);
+    border-bottom: 1px solid rgba(232,160,0,0.1);
     transition: color 0.2s;
 }
 
@@ -179,9 +179,9 @@ body {
 
     background:
         linear-gradient(to bottom,
-            rgba(253,246,232,0.72) 0%,
-            rgba(253,246,232,0.55) 50%,
-            rgba(253,246,232,0.72) 100%
+            rgba(255,248,240,0.72) 0%,
+            rgba(255,248,240,0.55) 50%,
+            rgba(255,248,240,0.72) 100%
         ),
         url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600')
         center/cover no-repeat;
@@ -192,7 +192,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(253,246,232,0.18);
+    background: rgba(255,248,240,0.18);
     pointer-events: none;
 }
 
@@ -247,10 +247,10 @@ body {
 }
 
 .std-frame {
-    border: 1px solid rgba(200, 134, 10, 0.35);
+    border: 1px solid rgba(232, 160, 0, 0.35);
     border-radius: 4px;
     padding: 20px;
-    background: rgba(253,246,232,0.75);
+    background: rgba(255,248,240,0.75);
     max-width: 700px;
     width: 92vw;
 }
@@ -451,9 +451,9 @@ body {
 .email-input {
     padding: 13px 24px;
     width: 290px;
-    border: 1px solid rgba(75,108,183,0.4);
+    border: 1px solid rgba(232,74,0,0.4);
     border-radius: 2px;
-    background: rgba(253,246,232,0.8);
+    background: rgba(255,248,240,0.8);
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 1rem;
     color: var(--ink);
@@ -599,7 +599,7 @@ body {
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(42, 35, 24, 0.92);
+    background: rgba(30, 20, 16, 0.92);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -756,7 +756,7 @@ footer {
     font-size: 0.78rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: rgba(253,246,232,0.45);
+    color: rgba(255,248,240,0.45);
 }
 
 /* ============================================================
