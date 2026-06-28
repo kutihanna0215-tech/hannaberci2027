@@ -115,21 +115,25 @@
         <div class="inline-divider" style="background: var(--lavender)"></div>
         <p>Mivel sokan életünk különböző időszakaiból ismertek minket, gondoltuk megosztunk néhány közös emléket veletek.</p>
         <p>Pár kedvenc fotó az elmúlt évekből — utazásokról, kirándulásokról és hétköznapi pillanatokból, amelyekből összeállt a mi történetünk.</p>
-        <div class="masonry">
-            <img src="IMG_1v2.jpg" alt="">
-            <img src="IMG_2v2.jpg" alt="">
-            <img src="IMG_4.jpg" alt="">
-            <img src="IMG_5.jpg" alt="">
-            <img src="IMG_11.jpg" alt="">
-            <img src="IMG_3.jpg" alt="">
-            <img src="IMG_12.jpg" alt="">
-            <img src="IMG_6.jpg" alt="">
-            <img src="IMG_7.jpg" alt="">
-            <img src="IMG_8.jpg" alt="">
-            <img src="IMG_9.jpg" alt="">
-            <img src="IMG_10.jpg" alt="">
-        </div>
-    </div>
+        <p class="swipe-hint" id="swipeHint">
+    Húzd oldalra a további képekért
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h14M12 6l5 6-5 6"/></svg>
+</p>
+ 
+<div class="masonry">
+    <figure><img src="IMG_1.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_2.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_3.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_4.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_5.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_6.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_7.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_8.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_9.jpg"  alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_10.jpg" alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_11.jpg" alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+    <figure><img src="IMG_12.jpg" alt="" loading="lazy" onload="this.classList.add('is-loaded')"></figure>
+</div>
     <!-- VIRÁG ELVÁLASZTÓ -->
     <div class="flower-row" aria-hidden="true">
         <img src="divider_transp.png" alt="" class="flower-divider-img">
@@ -194,5 +198,45 @@
 </footer>
 
 <script src="script.js"></script>
+    <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Bezárás">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+</div>
+ 
+<script>
+(function () {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var closeBtn = document.getElementById('lightboxClose');
+    var hint = document.getElementById('swipeHint');
+    var masonryEl = document.querySelector('.masonry');
+ 
+    document.querySelectorAll('.masonry img').forEach(function (img) {
+        img.addEventListener('click', function () {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('is-open');
+        });
+    });
+ 
+    function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        lightboxImg.src = '';
+    }
+ 
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+ 
+    if (hint && masonryEl) {
+        masonryEl.addEventListener('scroll', function () {
+            hint.style.opacity = '0';
+        }, { once: true });
+    }
+})();
+</script>
 </body>
 </html>
