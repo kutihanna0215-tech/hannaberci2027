@@ -7,15 +7,15 @@
 
 /* --- VÁLTOZÓK --- */
 :root {
-    --cream:    #FDF6E8;
-    --cream-dk: #F5EDD6;
-    --green:    #2D5016;
-    --gold:     #C8860A;
-    --rose:     #C4435A;
-    --blue:     #4B6CB7;
-    --lavender: #7C5C9E;
-    --ink:      #2A2318;
-    --ink-soft: #5C5043;
+    --cream:    #FFF8F0;
+    --cream-dk: #FAE0C8;
+    --green:    #4A6B28;
+    --gold:     #E8A000;
+    --rose:     #D40060;
+    --orange:   #E84A00;
+    --mauve:    #9E3D6B;
+    --ink:      #1E1410;
+    --ink-soft: #4A3028;
 }
 
 /* --- ALAP RESET --- */
@@ -371,28 +371,28 @@ body {
 }
 
 /* Szekció hátterek */
-.section-meghivo  {
-    background: linear-gradient(to bottom, var(--cream) 0%, #FAEEE5 100%);
+.section-meghivo {
+    background: linear-gradient(to bottom, var(--cream) 0%, #FAE8D8 100%);
 }
 
 .section-rsvp {
-    background: linear-gradient(to bottom, #FAEEE5 0%, #EAF0F8 100%);
-}
-
-.section-rolunk {
-    background: linear-gradient(to bottom, #EAF0F8 0%, #FFFBEE 100%);
-}
-
-.section-helyszin {
-    background: linear-gradient(to bottom, #FFFBEE 0%, #F8FBF2 100%);
-}
-
-.section-program {
-    background: linear-gradient(to bottom, #F8FBF2 0%, #F0EEF8 100%);
+    background: linear-gradient(to bottom, #FAE8D8 0%, #F9D8E4 100%);
 }
 
 .section-email {
-    background: linear-gradient(to bottom, #F0EEF8 0%, #EAF0F8 100%);
+    background: linear-gradient(to bottom, #F9D8E4 0%, #F5E8D0 100%);
+}
+
+.section-rolunk {
+    background: linear-gradient(to bottom, #F5E8D0 0%, #EEF2E4 100%);
+}
+
+.section-helyszin {
+    background: linear-gradient(to bottom, #EEF2E4 0%, #F5E0D8 100%);
+}
+
+.section-program {
+    background: linear-gradient(to bottom, #F5E0D8 0%, #F0D8E8 100%);
 }
 
 .section-divider {
@@ -425,12 +425,12 @@ body {
     color: var(--cream);
 }
 
-.btn-blue {
-    color: var(--blue);
+.btn-orange {
+    color: var(--orange);
 }
 
-.btn-blue:hover {
-    background: var(--blue);
+.btn-orange:hover {
+    background: var(--orange);
     color: var(--cream);
 }
 
@@ -472,7 +472,7 @@ body {
 }
 
 .email-input:focus {
-    border-color: var(--blue);
+    border-color: var(--orange);
 }
 
 .small-note {
