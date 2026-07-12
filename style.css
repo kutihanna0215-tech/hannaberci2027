@@ -267,19 +267,22 @@ body {
 
 .std-img-placeholder {
     width: 100%;
-    height: min(560px, 65vw);
+    height: min(480px, 52vw);
     background: var(--cream-dk);
     border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
 
 .std-img-placeholder img {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 3px;
     display: block;
+}
 
 .std-placeholder-inner {
     display: flex;
