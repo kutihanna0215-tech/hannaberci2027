@@ -276,12 +276,13 @@ body {
     overflow: hidden;
 }
 
-.std-img-placeholder img {
+.std-img-placeholder {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 5 / 4;
+    background: var(--cream-dk);
     border-radius: 3px;
-    display: block;
+    overflow: hidden;
 }
 
 .std-placeholder-inner {
