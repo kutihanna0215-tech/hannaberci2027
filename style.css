@@ -329,7 +329,7 @@ body {
     font-style: italic;
     font-weight: 300;
     font-size: clamp(2.8rem, 6vw, 4.2rem);
-    color: var(--orange);
+    color: var(--ink-soft);
     line-height: 1.1;
     margin-bottom: 22px;
 }
