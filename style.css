@@ -320,7 +320,7 @@ body {
     font-size: 0.85rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--green);
+    color: var(--orange);
     margin-bottom: 14px;
 }
 
@@ -329,7 +329,7 @@ body {
     font-style: italic;
     font-weight: 300;
     font-size: clamp(2.8rem, 6vw, 4.2rem);
-    color: var(--green);
+    color: var(--orange);
     line-height: 1.1;
     margin-bottom: 22px;
 }
@@ -337,7 +337,7 @@ body {
 .inline-divider {
     width: 48px;
     height: 1px;
-    background: var(--green);
+    background: var(--orange);
     margin: 0 auto 36px;
     opacity: 0.5;
 }
@@ -365,7 +365,7 @@ body {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-style: italic;
     font-size: 3.5rem;
-    color: var(--green);
+    color: var(--orange);
     margin-top: 44px;
     line-height: 1;
 }
@@ -429,11 +429,11 @@ body {
 }
 
 .btn-green {
-    color: var(--green);
+    color: var(--orange);
 }
 
 .btn-green:hover {
-    background: var(--green);
+    background: var(--orange);
     color: var(--cream);
 }
 
