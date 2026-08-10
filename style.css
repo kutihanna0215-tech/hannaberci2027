@@ -372,22 +372,22 @@ body {
 
 /* Szekció hátterek */
 .section-meghivo {
-    background: linear-gradient(to bottom, var(--cream) 0%, #FAE8D8 100%);
+    background: linear-gradient(to bottom, #FFF8F0 0%, #F7C5D0 100%);
 }
 .section-rsvp {
-    background: linear-gradient(to bottom, #FAE8D8 0%, #F9D8E4 100%);
-}
-.section-email {
-    background: linear-gradient(to bottom, #F0D8E8 0%, #F5E8D0 100%);
+    background: linear-gradient(to bottom, #F7C5D0 0%, #D40060 100%);
 }
 .section-rolunk {
-    background: linear-gradient(to bottom, #F9D8E4 0%, #E8F0D8 100%);
+    background: linear-gradient(to bottom, #D40060 0%, #F09000 100%);
 }
 .section-helyszin {
-    background: linear-gradient(to bottom, #E8F0D8 0%, #FAE2C0 100%);
+    background: linear-gradient(to bottom, #F09000 0%, #F2D600 100%);
 }
 .section-program {
-    background: linear-gradient(to bottom, #FAE2C0 0%, #F0D8E8 100%);
+    background: linear-gradient(to bottom, #F2D600 0%, #FAE0C8 100%);
+}
+.section-email {
+    background: linear-gradient(to bottom, #FAE0C8 0%, #E84A00 100%);
 }
 .section-divider {
     background: transparent;
