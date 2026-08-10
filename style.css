@@ -9,13 +9,13 @@
 :root {
     --cream:    #FFF8F0;
     --cream-dk: #FAE0C8;
-    --green:    #4A6B28;
-    --gold:     #E8A000;
+    --pink:     #F7C5D0;
+    --gold:     #F09000;
     --rose:     #D40060;
     --orange:   #E84A00;
-    --mauve:    #9E3D6B;
-    --ink:      #1E1410;
-    --ink-soft: #4A3028;
+    --yellow:   #F2D600;
+    --ink:      #2A1608;
+    --ink-soft: #9E3D6B;
 }
 
 /* --- ALAP RESET --- */
